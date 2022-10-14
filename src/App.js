@@ -58,6 +58,14 @@ function App() {
             </RequiredAuth>
           }
         ></Route>
+        <Route
+          path="/checkout"
+          element={
+            <RequiredAuth>
+              <CheckOut />
+            </RequiredAuth>
+          }
+        ></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
