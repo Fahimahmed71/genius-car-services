@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import useServiceDetails from "../../hooks/useServiceDetails";
-import { useForm } from "react-hook-form";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import axios from "axios";

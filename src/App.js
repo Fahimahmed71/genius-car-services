@@ -27,7 +27,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route
-          path="/checkout"
+          path="/checkout/:serviceId"
           element={
             <RequiredAuth>
               <CheckOut />
@@ -58,14 +58,7 @@ function App() {
             </RequiredAuth>
           }
         ></Route>
-        <Route
-          path="/checkout"
-          element={
-            <RequiredAuth>
-              <CheckOut />
-            </RequiredAuth>
-          }
-        ></Route>
+
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
