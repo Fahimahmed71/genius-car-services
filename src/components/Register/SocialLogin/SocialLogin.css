@@ -1,0 +1,20 @@
+.or {
+  position: relative;
+}
+
+.or::after {
+  content: "";
+  position: absolute;
+  border-top: 0.01px solid rgb(82, 82, 82);
+  width: 10em;
+  top: 50%;
+  left: 55%;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  border-top: 0.01px solid rgb(82, 82, 82);
+  width: 10em;
+  top: 50%;
+  right: 55%;
+}
